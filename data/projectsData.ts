@@ -1,27 +1,22 @@
-interface Project {
+import { TechStack } from '@/components/techStack'
+interface ProjectDataProps {
   title: string
   description: string
-  href?: string
-  imgSrc?: string
+  imgSrc: string
+  href: string
+  techStack: TechStack[]
 }
 
-const projectsData: Project[] = [
-  {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+const projectsData: ProjectDataProps[] = [
+/*  {
+    title: 'Corgi-AI: Create anything with AI',
+    description: 
+      'Corgi AI is a collection of AI tools for different usecases. It includes a chatGPT clone with streaming responses, Image Generation, Audio Generation, Image Restoration and PDF Chat(beta). It is a full fledged SaaS application with stripe payments. It is Deployed using Docker with a VPS hosting on fly.io',
+    href: 'https://corgi-ai.fly.dev',
+    imgSrc: '/static/images/corgi-ai-dashboard.png',
+    techStack: ['Svelte', 'TypeScript', 'PostgreSQL', 'Docker', 'Drizzle'],
   },
-  {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
-    imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
-  },
+*/
 ]
 
 export default projectsData
